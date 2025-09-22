@@ -5,6 +5,11 @@
 **EXE файл (158 MB):**  
 [Скачать с GitHub Releases](https://github.com/tyazheelo/Color-models/releases/tag/v1.0)
 
+## Веб-версия
+
+Также доступна веб-версия:  
+[Открыть в браузере](https://tyazheelo.github.io/Color-models)
+
 ## Запуск на ПК преподавателя
 
 1. Скачайте `Color-Picker.exe` из раздела Releases
