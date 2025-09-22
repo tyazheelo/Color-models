@@ -3,12 +3,7 @@
 ## Скачать приложение
 
 **EXE файл (158 MB):**  
-[Скачать с GitHub Releases](https://github.com/ваш-username/ваш-репозиторий/releases/latest)
-
-## Веб-версия
-
-Также доступна веб-версия:  
-[Открыть в браузере](https://ваш-username.github.io/ваш-репозиторий)
+[Скачать с GitHub Releases](https://github.com/tyazheelo/Color-models/releases/tag/v1.0)
 
 ## Запуск на ПК преподавателя
 
