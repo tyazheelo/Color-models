@@ -8,7 +8,7 @@
 ## Веб-версия
 
 Также доступна веб-версия:  
-[Открыть в браузере](https://tyazheelo.github.io/Color-models)
+[Открыть в браузере](https://tyazheelo.github.io/Color-models/)
 
 ## Запуск на ПК преподавателя
 
