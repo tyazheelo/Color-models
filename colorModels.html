@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Color models</title>
+    </head>
+    <body>
+        <header>
+            <h1>Color Models</h1>
+            <div>
+                <a href="#rgb">RGB</a>
+                <span class="middle-dot">·</span>
+                <a href="#lab">LAB</a>
+                <span class="middle-dot">·</span>
+                <a href="#cmyk">CMYK</a>
+            </div>
+        </header>
+        <main>
+        <fieldset class="color-picker">
+            <div class="color-model">
+                <canvas id="choose-model"></canvas>
+            </div>
+            <div id="changes">
+                <div id="color-canvas">
+                    <canvas class="color-canvas" id="black" title="black"></canvas>
+                    <canvas class="color-canvas" id="grey" title="grey"></canvas>
+                    <canvas class="color-canvas" id="light-grey" title="light grey"></canvas>
+                    <canvas class="color-canvas" id="white" title="white"></canvas>
+                    <canvas class="color-canvas" id="dark-red" title="dark red"></canvas>
+                    <canvas class="color-canvas" id="red" title="red"></canvas>
+                    <canvas class="color-canvas" id="orange" title="orange"></canvas>
+                    <canvas class="color-canvas" id="yellow" title="yellow"></canvas>
+                    <canvas class="color-canvas" id="dark-green" title="dark green"></canvas>
+                    <canvas class="color-canvas" id="green" title="green"></canvas>
+                    <canvas class="color-canvas" id="lime" title="lime"></canvas>
+                    <canvas class="color-canvas" id="light-green" title="light green"></canvas>
+                    <canvas class="color-canvas" id="dark-blue" title="dark blue"></canvas>
+                    <canvas class="color-canvas" id="blue" title="blue"></canvas>
+                    <canvas class="color-canvas" id="aqua" title="aqua"></canvas>
+                    <canvas class="color-canvas" id="light-blue" title="light blue"></canvas>
+                    <canvas class="color-canvas" id="indigo" title="indigo"></canvas>
+                    <canvas class="color-canvas" id="purple" title="purple"></canvas>
+                    <canvas class="color-canvas" id="fuchsia" title="fuchsia"></canvas>
+                    <canvas class="color-canvas" id="plum" title="plum"></canvas>
+                </div>
+                <div id = "transparent-slider">
+                    <label for="transparent-input">Transparent</label>
+                    <input type="range" id="transparent-input" class="sliders" min="0" max="100" value="100" name="transparent">
+                </div>
+            </div>
+        </fieldset>
+        <hr id="divider">
+        <fielset id="result-field">
+            <div id="all-models">
+                <fieldset class="models">
+                    <legend class="model-name" id="rgb">RGB</legend>
+                    <label for="rgb-r">R: 
+                        <input id="rgb-r" type="number" min="0" max="255" value="255" name="red">
+                    </label>
+                    <label for="rgb-g">G: 
+                        <input id="rgb-g" type="number" min="0" max="255" value="255" name="green">
+                    </label>
+                    <label for="rgb-b">B: 
+                        <input id="rgb-b" type="number" min="0" max="255" value="255" name="blue">
+                    </label>
+                </fieldset>
+                <fieldset class="models">
+                    <legend class="model-name" id="lab">LAB</legend>
+                    <label for="lab-l">L: 
+                        <input id="lab-l" type="number" min="0" max="100" value="100" name="lightness">
+                    </label>
+                    <label for="lab-a">A: 
+                        <input id="lab-a" type="number" min="-128" max="127" value="0" name="green-red">
+                    </label>
+                    <label for="lab-b">B: 
+                        <input id="lab-b" type="number" min="-128" max="127" value="0" name="blue-yellow">
+                    </label>
+                </fieldset>
+                <fieldset class="models">
+                    <legend class="model-name" id="cmyk">CMYK</legend>
+                    <label for="CMYK-c">C: 
+                        <input id="CMYK-c" type="number" min="0" max="100" value="100" name="cyan">
+                    </label>
+                    <label for="CMYK-m">M: 
+                        <input id="CMYK-m" type="number" min="0" max="100" value="0" name="magenta">
+                    </label>
+                    <label for="CMYK-y">Y: 
+                        <input id="CMYK-y" type="number" min="0" max="100" value="0" name="yellow">
+                    </label>
+                    <label for="CMYK-k">K: 
+                        <input id="CMYK-k" type="number" min="0" max="100" value="0" name="key">
+                    </label>  
+                </fieldset>
+            </div>
+            <div class="result-color">
+                <canvas id="picked-color"></canvas>
+            </div>
+            
+             <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const canvases = document.querySelectorAll('canvas');
+    
+    // Только консольная отладка
+    console.log('Canvases found:', canvases.length);
+    console.log('Main canvas:', document.getElementById('choose-model') ? 'OK' : 'MISSING');
+    console.log('Picked color canvas:', document.getElementById('picked-color') ? 'OK' : 'MISSING');
+    
+    // Проверяем размеры
+    canvases.forEach((canvas, i) => {
+        console.log(`Canvas ${i}:`, canvas.id, canvas.width, canvas.height);
+    });
+});
+    </script>
+        </fielset>
+
+        </main>
+        <footer>
+            
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,228 @@
+body{
+    background-color:rgb(35, 33, 57);
+    color: rgb(231, 230, 230);
+}
+header{
+    text-align: center;
+    font-size: 23px;
+
+}
+main{
+    border: 2px solid rgb(231, 230, 230);
+    margin: 2% 15%;
+    padding: 2%;
+}
+
+a[href^="#"]
+{
+    color: rgb(231, 230, 230);
+    text-decoration: none;
+}
+
+a[href^="#"]:hover
+{
+    color:rgb(126, 116, 169);
+}
+
+.middle-dot{
+    font-size: 25px;
+}
+
+:target {
+    color:aqua;
+    transition: all 0.3s ease;
+}
+
+
+#choose-model {
+    
+    height: 100%;
+    width: 90%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 20px auto;
+    cursor: pointer;
+}
+
+#choose-model:hover{
+    transform: scale(1.02);
+}
+
+.color-picker{
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
+#changes{
+    display: inline-block;
+    margin-top: 2.5%;
+    margin-left:2%;
+}
+
+#transparent-slider{
+    display: grid;
+    margin-top: 1%
+}
+
+.sliders{
+    -webkit-appearance: none;
+    width: 220px;
+    height: 7px;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgba(231, 230, 230, 1), rgba(231, 230, 230, 0.1));
+    margin: 2% 0%;
+}
+
+.sliders::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.color-canvas{
+    height: 30px;
+    width: 50px;
+    display: inline-table;
+    margin: 0.5%;
+}
+
+#color-canvas{
+    width: 230px;
+    margin: 2% 0%;
+
+}
+
+#divider{
+    margin: 2% 0%;
+}
+
+/*Result*/
+
+#result-field{
+    display: flex;
+    justify-content:space-evenly;
+
+}
+
+#all-models{
+    display: grid; 
+    margin-left: 3%;
+    margin-right: -2%;
+}
+
+.models{
+    display: flex;
+    margin-top: 1%;
+    height:fit-content;
+    justify-content: space-around;
+}
+
+.models input{
+    width: 40px;
+    margin: 0% 1%;
+}
+
+.model-name{
+    font-size: 18px;
+    display: grid;
+    margin: 1%;
+}
+
+#picked-color{
+   border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 85%;
+    background-color: white;
+    margin-top: 2%;
+    margin-left: 7%;
+}
+
+/* Colors */
+
+#black{
+    background-color:  black;
+}
+
+#light-grey{
+    background-color: lightgray;
+}
+
+#grey{
+    background-color: grey;
+}
+
+#white{
+    background-color: white;
+}
+
+#dark-red{
+    background-color: darkred;
+}
+
+#red{
+    background-color: red;
+}
+
+#orange{
+    background-color: orange;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#dark-green{
+    background-color: darkgreen;
+}
+
+#green{
+    background-color: green;
+}
+
+#lime{
+    background-color: lime;
+}
+
+#light-green{
+    background-color: lightgreen;
+}
+
+#dark-blue{
+    background-color: darkblue;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#aqua{
+    background-color: aqua;
+}
+
+#light-blue{
+    background-color: lightskyblue;
+}
+
+#indigo{
+    background-color: indigo;
+}
+
+#purple{
+    background-color: purple;
+}
+
+#fuchsia{
+    background-color: fuchsia;
+}
+
+#plum{
+    background-color: plum;
+}
+
